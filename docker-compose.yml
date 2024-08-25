@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      target: base
+    container_name: web
+    working_dir: /app
+    ports:
+      - 5000:3000
+    volumes:
+      - .:/app
+    command: bash -c 'npm install && npm start'
