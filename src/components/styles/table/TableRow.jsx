@@ -5,5 +5,6 @@ const TableRow = styled.tr`
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  border-radius: 8px;
 `
 export default TableRow

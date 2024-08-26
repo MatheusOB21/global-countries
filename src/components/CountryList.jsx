@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Box } from './styles/Box'
 import { Container } from './styles/Container'
 import { Table, TableHead, TableCell, TableRow, TableBody } from './styles/table'
+import Loading from './Loading'
 
 export default function  CountryList() {
   const [countries, setCountries] = useState();
@@ -32,9 +33,7 @@ export default function  CountryList() {
 
   if(!countries){
     return(
-      <div>
-        <h2>Carregando....</h2>
-      </div>
+      <Loading text={'Carregando lista de países...'}/>
     )
   }else{
     // debugger
