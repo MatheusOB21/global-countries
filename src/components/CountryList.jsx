@@ -5,6 +5,7 @@ import { Container } from './styles/Container';
 import { Table, TableHead, TableCell, TableRow, TableBody } from './styles/table';
 import { Input } from './styles/Input';
 import Loading from './Loading';
+import WorldGlobe from './WorldGlobe';
 
 export default function CountryList() {
   const [countries, setCountries] = useState();
@@ -81,6 +82,9 @@ export default function CountryList() {
                 </TableBody>
               </Table>
             </Box>
+            <Container>
+              <WorldGlobe />
+            </Container>
           </Container>
         </div>)}
     </>)
